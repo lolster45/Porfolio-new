@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <!-- CSS animations CDN... -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <script src="script.js" defer></script>
+    <script src="https://kit.fontawesome.com/2b8f30e114.js" crossorigin="anonymous"></script>
+    <title>My Portfolio</title>
+</head>
+<body>
+    <header>
+        <p>Logo</p>
+        <nav>
+            <ul>
+                <li><a href="#about-me">01. About Me</a></li>
+                <li><a href="#projects">02. Projects</a></li>
+                <li><a href="#connect">03. Connect</a></li>
+            </ul>
+        </nav>
+        <i id="ham-menu" class="fa-solid fa-bars"></i>
+    </header>
+    <main>
+        <aside id="email">
+            <a href="mailto:oscarneutron3@gmail.com" target="_blank">oscarneutron3@gmail.com</a>
+        </aside>
+        <aside id="decor-aside">
+            <div id="decoration">
+                <img src="https://i.pinimg.com/236x/36/21/43/36214306e54d179962fdb5fae58a0f59.jpg" alt="sharingan image">
+            </div>
+            <div id="decoration">
+                <img src="https://i.pinimg.com/236x/36/21/43/36214306e54d179962fdb5fae58a0f59.jpg" alt="sharingan image">
+            </div>
+            <div id="decoration">
+                <img src="https://i.pinimg.com/236x/36/21/43/36214306e54d179962fdb5fae58a0f59.jpg" alt="sharingan image">
+            </div>
+            <div id="decoration">
+                <img src="https://i.pinimg.com/236x/36/21/43/36214306e54d179962fdb5fae58a0f59.jpg" alt="sharingan image">
+            </div>
+            <div id="decoration">
+                <img src="https://i.pinimg.com/236x/36/21/43/36214306e54d179962fdb5fae58a0f59.jpg" alt="sharingan image">
+            </div>
+        </aside>
+        <section id="intro">
+            <p id="introP">Hi, my name is</p>
+            <h1 id="introP2">Oscar Reyes.</h1>
+            <h2 id="introP3">I am a Front End Developer</h2>
+        </section>
+        <section id="about-me">
+            <article class="left">
+                <h2>01. About Me!---------------</h2>
+                <p>Hi, my name is Oscar Reyes and I am an aspiring Front End Web Developer. I first started Web Development in High School, though never persued it until 2022. It has been close to 11 months since I started and have learned a tremendous amount of interesting things for Front-End.</p><br>
+                <p>I have built plenty of projects and although I dont have real world experience, I am willing to show just how hard I am willing to go in pursing my passion. So far it has been a fun journey(minus the frustration).</p>
+                <div id="skills-list">
+                    <h3>Skills:</h3>
+                    <ul>
+                        <li>HTML5</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                    </ul>
+                    <ul>
+                        <li>React Js</li>
+                        <li>NextJS</li>
+                        <li>SCSS</li>
+                    </ul>
+                </div>
+            </article>
+            <img class="right" src="https://media.licdn.com/dms/image/D5603AQGMy0b1soLnQA/profile-displayphoto-shrink_800_800/0/1675240151524?e=1682553600&v=beta&t=h--vzcG8TYvSx-7e3rrlB4cwU200s9wljMmuvmR8CIc" alt="my profile picture">
+        </section>
+        <section id="projects">
+            <h3 id="title">
+                02. Projects and stuff ---------
+            </h3>
+            <article class="prj-cont">
+                <picture class="left-proj">
+                    <a href="" id="third-Img">
+                        <img id="anime-Img" class="img" src="/images/Neanime(discovery).png" 
+                        alt="image of top anime project">
+                    </a>
+                </picture>
+                <div class="project-info right-proj">
+                    <h2>Anime</h2>
+                    <p>
+                        Utilizing the Jikan anime API with a backend of FireBase. Users are able to sign in with Google which allows them access to the bookmark tab and community tab.</p>
+                    <a href="https://github.com/lolster45/AnimeWebsite" target="_blank">
+                        <button class="btn-proj">Git-Hub</button>
+                    </a>
+                    <a href="https://animenew-82be3.web.app/" class="open-live" target="_blank">
+                        <i class="fa-solid fa-up-right-from-square"></i>
+                    </a>
+                    <span>
+                        React, HTML, SCSS, JavaScript, FireBase, Redux-toolkit
+                    </span>
+                </div>
+            </article>
+            <article class="prj-cont">
+                <picture class="left-proj">
+                    <a href="" id="third-Img">
+                        <img id="anime-Img" class="img" src="/images/RCON.png" alt="image of top anime project">
+                    </a>
+                </picture>
+                <div class="project-info right-proj">
+                    <h2>Random Confessions</h2>
+                    <p>
+                        A confession website where auth users are able to confess things that fall into the set categories availble. Utilizing dynamic routes, SSR, ISR, and StaticProps allows for a clean/lighting-fast exp.</p>
+                    <a href="https://github.com/lolster45/Random_Confessions" target="_blank">
+                        <button class="btn-proj">Git-Hub</button>
+                    </a>
+                    <a href="https://random-confessions-ee6l-xwbej1wi7-lolster45.vercel.app/" class="open-live" target="_blank">
+                        <i class="fa-solid fa-up-right-from-square"></i>
+                    </a>
+                    <span>
+                        NextJS, HTML, SCSS, JavaScript, FireBase
+                    </span>
+                </div>
+            </article>
+            <article class="prj-cont">
+                <picture class="left-proj">
+                    <a href="" id="third-Img">
+                        <img id="anime-Img" class="img" src="/images/anime(pic).jpg" alt="image of top anime project">
+                    </a>
+                </picture>
+                <div class="project-info right-proj">
+                    <h2>Anime</h2>
+                    <p>I used the Jikan animeList API which shows you the current trending/popular anime. It also has Google login with exclusive features only available to users who are logged in. Plus built in search functionality.</p>
+                    <a href="https://github.com/lolster45/MyAnimeList" target="_blank">
+                        <button class="btn-proj">Git-Hub</button>
+                    </a>
+                    <a href="https://lolster45.github.io/MyAnimeList/" class="open-live" target="_blank">
+                        <i class="fa-solid fa-up-right-from-square"></i>
+                    </a>
+                    <span>
+                        React, HTML, SCSS, JavaScript, FireBase
+                    </span>
+                </div>
+            </article>
+            <article class="prj-cont">
+                <picture class="left-proj">
+                    <a href="#">
+                        <img class="img third" src="./images/e-commerse.jpg" alt="image of e commerse project"> 
+                    </a>
+                </picture>
+                <div class="project-info right-proj">
+                    <h2>E-commerse</h2>
+                    <p>This is a mock website I made using the products API and built a brand out of it. Made with React and SCSS and everything nice.</p>
+                    <a href="https://github.com/lolster45/ECOM" target="_blank">
+                        <button class="btn-proj">Git-Hub</button>
+                    </a>
+                    <a href="https://lolster45.github.io/ECOM/" class="open-live" target="_blank">
+                        <i class="fa-solid fa-up-right-from-square"></i>
+                    </a>
+                    <span>
+                        React, HTML, SCSS, JavaScript
+                    </span>
+                </div>
+            </article>
+            <article class="prj-cont">
+                <picture class="left-proj">
+                    <a href="https://github.com/lolster45/Calculator-brainnest">
+                        <img class="img" src="./images/calculator(orange).jpg" alt="image of calculator project">
+                    </a>
+                </picture>
+                <div class="project-info right-proj">
+                    <h2>Calculator</h2>
+                    <p>A calculator app I made when interning at Brainnest.</p>
+                    <a href="https://github.com/lolster45/Calculator-brainnest" target="_blank">
+                        <button class="btn-proj">
+                            Git-Hub
+                        </button>
+                    </a>
+                    <a href="https://lolster45.github.io/Calculator-brainnest/" class="open-live" target="_blank">
+                        <i class="fa-solid fa-up-right-from-square"></i>
+                    </a>
+                    <span>HTML, CSS, JavaScript</span>
+                </div>
+            </article>
+        </section>
+        <section id="projects-grid">
+            <h2 id="grid-title">03. More Work--------------</h2>
+            <div class="left" onclick="window.open('https://github.com/lolster45/Color-Scheme-Maker', '_blank'); return false;">
+                <h2><a href=>Color Scheme</a></h2>
+                <p>I used a color scheme API I found on Git-Hub.</p>
+                <span>HTML, CSS, JavaScript</span>
+            </div>
+            <div class="right" onclick="window.open('https://github.com/lolster45/Tic-Tac-Toe', '_blank'); return false;">
+                <h2><a href="">Tic Tac Toe</a></h2>
+                <p>A simple tic tac toe game to play with against your friends. It can keep score</p>
+                <span>HTML, CSS, JavaScript</span>
+            </div>
+            <div class="right" onclick="window.open('https://github.com/lolster45/Anime-quote-generator', '_blank'); return false;">
+                <h2><a href="">Quote Generator</a></h2>
+                <p>I used an anime quote API found on Git-Hub to generate random quotes as the tile states. Some are fun quotes while others....</p>
+                <span>HTML, CSS, JavaScript</span>
+            </div>
+            <div class="left" onclick="window.open('https://github.com/lolster45/Password-generator', '_blank'); return false;">
+                <h2><a href="">Password Generator</a></h2>
+                <p>If you ever dont feel creative enough to make a password, well you have come to right place...</p>
+                <span>HTML, CSS, JavaScript</span>
+            </div>
+            <div class="left" onclick="window.open('', '_blank'); return false;">
+                <h2><a href="">To-do List</a></h2>
+                <p>A simple to-do list made with React. You can delete and add bullet points throught the day to fit your needs.</p>
+                <span>React, HTML, CSS, JavaScript</span>
+            </div>
+        </section>
+    </main>
+    <footer id="connect">
+        Created by Me.
+        <div id="connect-logos">
+            <a href="https://www.linkedin.com/in/oscar-reyes-denova-34b4a81a2/" target="_blank">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/lolster45" target="_blank">
+                <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://drive.google.com/file/d/17Gs9iNASAe0IsRs5Wm3crChowydZqkqV/view?usp=sharing" target="_blank">
+                <i class="fa-solid fa-file"></i>
+            </a>
+        </div>
+    </footer>
+</body>
+</html>
